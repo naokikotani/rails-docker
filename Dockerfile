@@ -15,6 +15,6 @@ WORKDIR /rails_docker
 ADD Gemfile /rails_docker/Gemfile
 ADD Gemfile.lock /rails_docker/Gemfile.lock
 RUN bundle install
-ADD package.json yarn.lock /rails_docker
+ADD package.json yarn.lock /rails_docker/
 RUN yarn install
 ADD . /rails_docker
